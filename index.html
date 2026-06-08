@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIFA 2026 Live Scores</title>
+  <meta name="description" content="Professional FIFA World Cup 2026 live score website template." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <nav class="nav shell">
+      <a class="brand" href="#top" aria-label="FIFA 2026 Scores home">
+        <span class="brand-mark">⚽</span>
+        <span>FIFA<span>26</span> Scores</span>
+      </a>
+      <div class="nav-links">
+        <a href="#live">Live</a>
+        <a href="#fixtures">Fixtures</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">United States • Canada • Mexico</p>
+        <h1>Follow FIFA World Cup 2026 live scores in style.</h1>
+        <p class="hero-text">A professional, responsive match center with live status cards, tournament imagery, host city highlights, and GitHub-ready static files.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#live">View scores</a>
+          <button class="button ghost" id="refreshBtn">Refresh now</button>
+        </div>
+        <div class="stats-grid">
+          <div><strong>48</strong><span>Teams</span></div>
+          <div><strong>104</strong><span>Matches</span></div>
+          <div><strong>16</strong><span>Host cities</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="World Cup 2026 visual illustration">
+        <img src="assets/stadium.svg" alt="Bright football stadium illustration" />
+        <div class="live-pill"><span></span> LIVE CENTER</div>
+      </div>
+    </section>
+
+    <section id="live" class="section shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Match center</p>
+          <h2>Live FIFA 2026 Scores</h2>
+        </div>
+        <p class="muted" id="lastUpdated">Loading scores…</p>
+      </div>
+      <div class="scoreboard" id="scoreboard"></div>
+    </section>
+
+    <section id="fixtures" class="section shell two-col">
+      <div class="panel">
+        <p class="eyebrow">Featured fixtures</p>
+        <h2>Upcoming spotlight matches</h2>
+        <div id="fixtureList" class="fixture-list"></div>
+      </div>
+      <div class="panel image-panel">
+        <img src="assets/hosts.svg" alt="Stylized host countries and football fans" />
+      </div>
+    </section>
+
+    <section id="about" class="section shell about-card">
+      <div>
+        <p class="eyebrow">Developer note</p>
+        <h2>Easy to connect to a real live-score API</h2>
+        <p>This template runs immediately with realistic demo data. To make it truly live, add your API key in <code>app.js</code> and switch the provider function to API-Football, Sportmonks, TheSportsDB, or another licensed football data feed.</p>
+      </div>
+      <img src="assets/trophy.svg" alt="Gold trophy illustration" />
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span>© 2026 FIFA26 Scores UI</span>
+    <span>Built for GitHub Pages</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
